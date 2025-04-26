@@ -1,0 +1,32 @@
+*{
+    margin : auto;
+    padding : auto;
+}
+
+$color-primary: #f76c5e;
+$color-secondary: #f68e5f;
+$color-tertiary: #ffeee6;    
+
+/*Header*/
+.header {
+    &__title {
+        color : $color-primary;
+        font-size : 60px;
+        font-weight : 900;
+        margin : 10px;
+    }
+
+    &__subtitles {
+        color : $color-secondary;
+        font-size: 30px;
+        font-weight: 600;
+        margin : 10px;
+    }
+
+    &__text {
+        color : $color-secondary;
+        font-size: 17px;
+        font-weight: 500;
+        margin : 10px;
+    }
+}
