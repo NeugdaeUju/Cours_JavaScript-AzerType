@@ -1,14 +1,29 @@
 *{
-    margin : auto;
-    padding : auto;
+    margin : 0;
+    padding : 0;
 }
 
 $color-primary: #f76c5e;
 $color-secondary: #f68e5f;
 $color-tertiary: #ffeee6;    
 
+/*General*/
+body {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    font-family : 'Roboto' , sans-serif;
+}
+
+
 /*Header*/
 .header {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+
     &__title {
         color : $color-primary;
         font-size : 60px;
