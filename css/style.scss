@@ -66,4 +66,15 @@ body {
         font-weight: 500;
         margin : 10px;
     }
+
+    &__gameChoice {
+        &--radio{
+            filter: grayscale(1);
+            margin: 15px 10px 15px 0;
+        }
+    }
+}
+
+#phrases {
+    margin-left : 20px;
 }

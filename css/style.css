@@ -57,4 +57,12 @@ body {
   font-size: 17px;
   font-weight: 500;
   margin: 10px;
+}
+.playArea__gameChoice--radio {
+  filter: grayscale(1);
+  margin: 15px 10px 15px 0;
+}
+
+#phrases {
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
