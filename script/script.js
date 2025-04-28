@@ -13,5 +13,12 @@
         let score = 0
         let nombreTotalMots = 0
 
+    let button = document.getElementById("btnValiderMot")
+    let motUtilisateur = document.getElementById("inputEcriture")
+
+    button.addEventListener("click" , () => {
+        console.log(motUtilisateur.value)
+    } )
+    
        afficherResultat(score , nombreTotalMots)
     }
