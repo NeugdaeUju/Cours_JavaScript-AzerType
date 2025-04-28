@@ -8,17 +8,37 @@
         scoreJoueur.innerText = contenuScore
     } 
 
+    function afficherProposition(proposition) {
+        let zoneProposition = document.querySelector(".zoneProposition")
+        zoneProposition.innerText = proposition
+    }
+
     //Fonction permettant de lancer le jeu
     function lancerJeu () {
         let score = 0
-        let nombreTotalMots = 0
+        let i = 0
 
     let button = document.getElementById("btnValiderMot")
     let motUtilisateur = document.getElementById("inputEcriture")
+    afficherProposition(listeMots[i])
 
     button.addEventListener("click" , () => {
         console.log(motUtilisateur.value)
+        if (motUtilisateur.value === listeMots[i]) {
+            score++
+        }
+        i++
+        afficherResultat(score , i)
+
+        motUtilisateur.value = ``
+        if (listeMots[i] === undefined) {
+            afficherProposition("Le jeu est fini !")
+            button.disabled = true
+        } else {
+            afficherProposition(listeMots[i])
+        }
+
     } )
-    
-       afficherResultat(score , nombreTotalMots)
+
+    afficherResultat(score , i)
     }
