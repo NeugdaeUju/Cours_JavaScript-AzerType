@@ -1,5 +1,5 @@
 //Appelle de la fonction lancerJeu pour commencer à jouer
-// lancerJeu()
+lancerJeu()
 
 let motEcrit = document.getElementById("inputEcriture")
 console.log(motEcrit)

@@ -1,7 +1,11 @@
 // Mes fonctions
     //Fonction permettant d'afficher le résultat du jouer
     function afficherResultat(score, nombreTotalMots){
-        console.log("Votre score est de " + score + " sur " + nombreTotalMots)
+        // console.log("Votre score est de " + score + " sur " + nombreTotalMots)
+
+        let scoreJoueur = document.querySelector(".zoneScore span")
+        let contenuScore = `${score} / ${nombreTotalMots}`
+        scoreJoueur.innerText = contenuScore
     } 
 
     //Fonction demandant au joueur de choisir la liste pour lancer le jeu
@@ -40,6 +44,10 @@
         }
 
        afficherResultat(score , nombreTotalMots)
-
     }
+
+// Afficher le score dans le document HTML sous la forme score / nombreTotalMots
+// 1 récupérer l'élément HTML à modifier (.zoneScore span)
+// 2 créer un élément qui affiche le score (utiliser innerchild?)
+// 3 insérer l'élément dans l'élément sélectionner
 
